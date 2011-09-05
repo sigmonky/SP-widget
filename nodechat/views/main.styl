@@ -1,0 +1,114 @@
+html 
+  height 100%
+
+body 
+  font 12px/1.3 "Lucida Grande", Arial, sans-serif
+  margin 0
+  padding 0
+  height 100%
+    
+h1
+  margin-top 0px
+
+form input
+  padding 5px
+  border 1px 
+
+//2 column layout
+header-height = 0px
+column-width = 200px
+footer-height = 29px
+background-lower-color = #e8f3ff
+background-upper-color = #ffffff
+
+#wrap
+  min-height 100%
+  height 100%
+  margin auto
+  position relative
+
+
+#inner-wrap
+  padding-bottom footer-height
+  padding-top header-height
+
+#inner-wrap:after
+  content " "
+  display block
+  clear both
+
+#right 
+  position absolute
+  top 0
+  right 0
+  bottom 0
+  margin-top header-height
+  width column-width
+  background-color #1c486e
+  color white
+  text-align left
+
+#user_list
+  padding 5px
+
+#chat_list
+  padding 5px
+  background linear-gradient(top, background-upper-color, background-lower-color)
+  background -moz-linear-gradient(top, background-upper-color, background-lower-color)
+  background -webkit-gradient(linear, center top, center bottom, from(background-upper-color), to(background-lower-color))
+  background -o-linear-gradient(top, background-upper-color, background-lower-color)
+  background linear-gradient(top, background-upper-color, background-lower-color)
+  position absolute
+  top 0
+  bottom 0
+  right 0
+  left 0
+  margin-right column-width
+  margin-bottom footer-height
+  margin-top header-height
+  overflow-y scroll
+
+#footer
+  position absolute
+  bottom 0
+  height footer-height
+  right 0
+  margin-right column-width
+  background #dbdbdb
+  border solid 1px gray
+  padding-right 2px
+
+#message_field
+  width 100%
+  padding 0px
+  overflow-x hide
+  background #dbdbdb
+  height footer-height - 2px
+
+#message_send_button
+  display none
+
+#version
+  font-size 7px
+  margin-top 135px
+  margin-right column-width + 45
+
+#title
+#disconnectMessage 
+  text-align right
+  font-size 125px
+  margin-right column-width + 30px
+
+#title 
+#version
+#disconnectMessage 
+  position absolute
+  top 0
+  right 0
+  z-index 1
+  opacity .15
+
+#disconnectMessage 
+  margin-top 150px
+  color red
+  display none

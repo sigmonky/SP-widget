@@ -1,0 +1,36 @@
+!!! 5
+html(lang="en")
+  head
+    title nodechat login
+  body
+    #heading
+      h1 nodechat login
+    #content
+      p
+        | please login 
+      form(method="post", action="/login")
+        div(style='width:200px; text-align:right')
+          label username:
+            input(type='text', name='username')
+          br
+          label password:
+            input(type='password', name='password')
+          br
+          input(type='submit', value='login')
+          br
+      p
+        | or create an account 
+      form(method="post", action="/signup")
+        div(style='width:200px; text-align:right')
+          label username:  
+            input(type='text', name='username')
+          br
+          label password:  
+            input(type='text', name='password')
+          br
+          label email:  
+            input(type='text', name='email')
+          br
+          input(type='submit', value='signup & login')
+      p
+        #error(style='color: red') #{locals.error}

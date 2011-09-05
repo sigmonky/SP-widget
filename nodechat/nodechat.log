@@ -1,0 +1,53 @@
+
+info: Attempting to use config at /home/node/nodechat_config
+info: no config found. starting in local dev mode
+info: [main] nodechat v0.3.19 listening on port 8000
+info: Unlinked ./public/main.css
+info: GET main.css complete
+info: GET /login
+info: [authenticate] Starting auth for test with password test
+error: [signInAccount][authenticateUser][fn] Error: Error: [authenticateUser] user: test not found in store.
+info: sending back {"name":"test","email":"test","hashPass":"8ed105d1c837880b8f3921f7493411a1a8ad3a801559658ac75bcfef65408e3c6bfb69aab8ef48abc1299f591bcc08039391bd724476e0ff581c75b4898b4dac"}
+info: [authenticate] Starting auth for test with password test
+info: [authenticateUser] user: test found in store. Verifying password.
+info: [verifyUserAccount] Auth succeeded for test with password test
+info: [verifyUserAccount] profile returned {"name":"test","email":"test"}
+info: sending back f{"name":"test","email":"test","hashPass":"8ed105d1c837880b8f3921f7493411a1a8ad3a801559658ac75bcfef65408e3c6bfb69aab8ef48abc1299f591bcc08039391bd724476e0ff581c75b4898b4dac"}
+info: regenerated session id oeO7EDnIfotn73QYjrPGFwDZ.DwwOltVZViW91r158eXNpPqeUxNvCsat5006/Y+yhDU
+info: Storing new hash for user test: 8ed105d1c837880b8f3921f7493411a1a8ad3a801559658ac75bcfef65408e3c6bfb69aab8ef48abc1299f591bcc08039391bd724476e0ff581c75b4898b4dac
+info: [purgatory] status true
+info: [authenticateUserByHash] Starting hash auth for test with hash 8ed105d1c837880b8f3921f7493411a1a8ad3a801559658ac75bcfef65408e3c6bfb69aab8ef48abc1299f591bcc08039391bd724476e0ff581c75b4898b4dac
+info: [authenticateUserByHash] user: test found in store. Verifying password.
+info: [authenticateUserByHash] user: test hash verified. Authenticated.
+info: [purgatory] out of purgatory
+info: Client 5597102537285537 setup for pub/sub
+info: Client 5597102537285537 subcribed to main topic
+info: Client 5597102537285537 connection setup.
+info: [purgatory] status false
+info: [handleMessage] routing message: {"event":"chat","data":"asdf"}
+info: [parseControlWordsFromChat] main topic
+info: [handleChat][createChat][fn] publishing to chat to topic main, {"id":1,"cid":"c1","attrs":{"id":1,"topic":"main","text":"asdf","user":"test","niceTime":"09:47:35 PM","time":1311828455533}}
+info: [handleChat][createChat][fn] saving to chat to topic main, {"id":1,"cid":"c1","attrs":{"id":1,"topic":"main","text":"asdf","user":"test","niceTime":"09:47:35 PM","time":1311828455533}}
+info: GET /login
+info: [authenticate] Starting auth for test with password test
+info: [authenticateUser] user: test found in store. Verifying password.
+info: [verifyUserAccount] Auth succeeded for test with password test
+info: [verifyUserAccount] profile returned {"name":"test","email":"test"}
+info: sending back f{"name":"test","email":"test","hashPass":"8ed105d1c837880b8f3921f7493411a1a8ad3a801559658ac75bcfef65408e3c6bfb69aab8ef48abc1299f591bcc08039391bd724476e0ff581c75b4898b4dac"}
+info: regenerated session id MUxbRgKLat4Wnx7ZVzpBIWk1.Qz+zV9BCSxJxug8SaJbdHxbXt2tcviJCdaumozZQZK4
+info: Storing new hash for user test: 8ed105d1c837880b8f3921f7493411a1a8ad3a801559658ac75bcfef65408e3c6bfb69aab8ef48abc1299f591bcc08039391bd724476e0ff581c75b4898b4dac
+info: [purgatory] status true
+info: [authenticateUserByHash] Starting hash auth for test with hash 8ed105d1c837880b8f3921f7493411a1a8ad3a801559658ac75bcfef65408e3c6bfb69aab8ef48abc1299f591bcc08039391bd724476e0ff581c75b4898b4dac
+info: [authenticateUserByHash] user: test found in store. Verifying password.
+info: [authenticateUserByHash] user: test hash verified. Authenticated.
+info: [purgatory] out of purgatory
+info: Client 2815609276294708 setup for pub/sub
+info: Client 2815609276294708 subcribed to main topic
+info: [connectedusers]test
+info: Client 2815609276294708 connection setup.
+info: [purgatory] status false
+info: [handleMessage] routing message: {"event":"chat","data":"asdf"}
+info: [parseControlWordsFromChat] main topic
+info: [handleChat][createChat][fn] publishing to chat to topic main, {"id":2,"cid":"c3","attrs":{"id":2,"topic":"main","text":"asdf","user":"test","niceTime":"09:47:44 PM","time":1311828464362}}
+info: [handleChat][createChat][fn] saving to chat to topic main, {"id":2,"cid":"c3","attrs":{"id":2,"topic":"main","text":"asdf","user":"test","niceTime":"09:47:44 PM","time":1311828464362}}
+info: [clientDisconnect] disconnecting client: 2815609276294708
